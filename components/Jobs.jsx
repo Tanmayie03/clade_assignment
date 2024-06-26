@@ -6,8 +6,8 @@ import logo from "../src/assets/images/logo.png";
 
 const Jobs = () => {
   return (
-    <div className=" w-full no-scrollbar  flex">
-      <div className="md:w-3/4 w-full md:py-[42px] py-5 border border-[#E7E7E7] ">
+    <div className="flex flex-col w-full md:flex-row no-scrollbar">
+      <div className="md:w-3/4 w-full md:pt-[42px] py-5 border border-[#E7E7E7] ">
         <div className="flex  items-center px-5 md:px-[78px] 2xl:px-24 gap-x-1.5 md:gap-x-3">
           <p className="md:text-3xl text-base 2xl:text-[35px] font-bold text-[#3D3D3D]">
             Senior Product Designer
@@ -45,7 +45,7 @@ const Jobs = () => {
                 stroke-linejoin="round"
               />
             </svg>
-            <p className=" ml-2 ">Delaware, USA</p>
+            <p className="ml-2 ">Delaware, USA</p>
           </div>
           <div className=" bg-[#D1D1D1] h-1 w-1 rounded-full"></div>
           <div className="flex items-center">
@@ -131,7 +131,7 @@ const Jobs = () => {
           </div>
         </div>
         <div className="border-t px-5 py-5 md:px-[78px] 2xl:px-24 border-[#E7E7E7] md:py-10">
-          <div className="py-2 flex items-center gap-x-4">
+          <div className="flex items-center py-2 gap-x-4">
             <img src={logo} />
             <p className="text-[#4F4F4F] text-base md:text-xl">Atlassian </p>
             <button className="text-[#003788] rounded-lg px-4 py-1 text-[11px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] font-bold bg-[#E0EBF9]">
@@ -191,9 +191,9 @@ const Jobs = () => {
           </div>
         </div>
       </div>
-      <div className="w-1/4 hidden md:block py-9  bg-[#FCFCFC]  border  border-[#E7E7E7]">
-        <div className="flex justify-center px-[30px] gap-x-4">
-          <div className="flex items-center justify-center w-fit px-6 py-3 2xl:px-9  text-[#DC4A2D] border border-[#DC4A2D] rounded-lg bg-[#FEF4F2]">
+      <div className="md:w-1/4  py-9  bg-[#FCFCFC]  border  border-[#E7E7E7]">
+        <div className="flex justify-center px-5 md:px-[30px] gap-x-4">
+          <div className="flex items-center justify-center w-full  px-6 md:px-4 py-3 2xl:px-9  text-[#DC4A2D] border border-[#DC4A2D] rounded-lg bg-[#FEF4F2]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="17"
@@ -209,7 +209,7 @@ const Jobs = () => {
             </svg>
             <p className="ml-2 text-sm 2xl:text-base "> Delete job</p>
           </div>
-          <div className="flex items-center justify-center  px-6 w-fit 2xl:px-11 py-2 text-white bg-[#DC4A2D] rounded-lg ">
+          <div className="flex items-center justify-center  px-6 w-full  2xl:px-11 py-2 text-white bg-[#DC4A2D] rounded-lg ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="17"
@@ -227,8 +227,8 @@ const Jobs = () => {
             <p className="ml-2 text-sm 2xl:text-base"> Edit job</p>
           </div>
         </div>
-        <div className="py-6 2xl:py-5 px-3 2xl:px-12">
-          <div className="flex py-6 border-b border-[#E7E7E7] px-2 justify-between items-center">
+        <div className="px-10 py-6 2xl:py-5 md:px-10 2xl:px-12">
+          <div className="flex py-4 md:py-6 border-b border-[#E7E7E7] px-2 justify-between items-center">
             <div className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +248,7 @@ const Jobs = () => {
             </div>
             <p className=" text-xl text-[#3D3D3D]">400</p>
           </div>
-          <div className="flex py-6 border-b border-[#E7E7E7] px-2 justify-between items-center">
+          <div className="flex py-4 md:py-6 border-b border-[#E7E7E7] px-2 justify-between items-center">
             <div className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -268,7 +268,7 @@ const Jobs = () => {
             </div>
             <p className=" text-xl text-[#3D3D3D]">100</p>
           </div>
-          <div className="flex py-6 border-b border-[#E7E7E7] px-2 justify-between items-center">
+          <div className="flex py-4 md:py-6 border-b border-[#E7E7E7] px-2 justify-between items-center">
             <div className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -288,7 +288,7 @@ const Jobs = () => {
             </div>
             <p className=" text-xl text-[#3D3D3D]">147</p>
           </div>
-          <div className="flex py-6 justify-between px-2 items-center">
+          <div className="flex items-center justify-between px-2 py-4 md:py-6">
             <div className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -316,11 +316,11 @@ const Jobs = () => {
             <p className=" text-xl text-[#3D3D3D]">800</p>
           </div>
         </div>
-        <div className="bg-white rounded-xl 2xl:mx-4 2xl:my-2 drop-shadow-xl p-8">
-          <p className=" text-black text-lg 2xl:text-xl">
+        <div className="p-8 mx-4 bg-white rounded-xl 2xl:mx-4 2xl:my-2 drop-shadow-xl">
+          <p className="text-lg text-black 2xl:text-xl">
             “A quote from a Atlassian.”
           </p>
-          <div className="pt-8 2xl:pt-12 flex items-center">
+          <div className="flex items-center pt-8 2xl:pt-12">
             <img src={atlassian_img} />
             <div className="px-4">
               <p className="text-black">Name</p>

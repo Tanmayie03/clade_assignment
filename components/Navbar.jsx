@@ -6,7 +6,7 @@ const Navbar = ({ children }) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <nav className="text-xl relative">
+    <nav className="relative text-xl">
       <div className="py-4 md:py-[22px] px-5 md:px-8 text-base 2xl:text-xl flex items-center shadow-md justify-between">
         <div className="">
           <p className="text-[#DC4A2D] font-bold mx-0 md:mx-2 2xl:text-xl text-base bg-[#E7E7E7] py-2 md:py-4 px-4 md:px-6">
@@ -14,7 +14,7 @@ const Navbar = ({ children }) => {
           </p>
         </div>
         <div className="hidden md:block ">
-          <div className="flex items-center gap-x-4 ml-5 ">
+          <div className="flex items-center ml-5 gap-x-4 ">
             <div className="bg-[#DC4A2D] flex items-center h-fit py-3 justify-center border-2 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-[#FCB4A5] rounded-full  px-3 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -30,10 +30,10 @@ const Navbar = ({ children }) => {
                   stroke-linejoin="round"
                 />
               </svg>
-              <p className="text-white  ml-2">Jobs</p>
+              <p className="ml-2 text-white">Jobs</p>
             </div>
-            <div className="px-11 flex font-normal cursor-pointer border-[0.5px] text-[#B0B0B0] gap-x-4 rounded-full shadow-[inset_0_2px_4px_rgba(0,0,0,0.3)] border-[#D1D1D1] py-[14px]">
-              <div className=" flex items-center justify-center  relative px-4 py-2">
+            <div className="px-11 flex font-normal cursor-pointer border-[0.5px] text-[#B0B0B0] gap-x-4 rounded-full shadow-[inset_0_2px_4px_rgba(0,0,0,0.3)] border-[#D1D1D1] md:py-3 2xl:py-[14px]">
+              <div className="relative flex items-center justify-center px-4 py-2 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -46,10 +46,10 @@ const Navbar = ({ children }) => {
                     stroke-width="2"
                   />
                 </svg>
-                <p className="  ml-2">Messages</p>
+                <p className="ml-2 ">Messages</p>
                 <div className="bg-[#DC4A2D] w-[6px] h-[6px] absolute top-2 rounded-full left-8"></div>
               </div>
-              <div className=" flex items-center justify-center   px-4 py-2">
+              <div className="flex items-center justify-center px-4 py-2 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -62,9 +62,9 @@ const Navbar = ({ children }) => {
                     stroke-width="2"
                   />
                 </svg>
-                <p className="  ml-2">Payments</p>
+                <p className="ml-2 ">Payments</p>
               </div>
-              <div className=" flex items-center justify-center   px-4 py-2">
+              <div className="flex items-center justify-center px-4 py-2 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -77,12 +77,12 @@ const Navbar = ({ children }) => {
                     stroke-width="2"
                   />
                 </svg>
-                <p className="  ml-2">Application</p>
+                <p className="ml-2 ">Application</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex 2xl:mx-3 items-center gap-x-2 justify-center ">
+        <div className="flex items-center justify-center 2xl:mx-3 gap-x-2 ">
           <div className="relative">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -99,12 +99,12 @@ const Navbar = ({ children }) => {
                 stroke-linejoin="round"
               />
             </svg>
-            <div className="bg-[#DC4A2D] w-[6px] h-[6px] absolute top-[2px] rounded-full left-4"></div>
+            <div className="bg-[#DC4A2D] w-[6px] h-[6px] absolute top-[0px] rounded-full left-5"></div>
           </div>
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="md:hidden"
+              className="ml-2 md:hidden"
               width="20"
               height="24"
               viewBox="0 0 20 24"
@@ -141,9 +141,9 @@ const Navbar = ({ children }) => {
             </svg>
             {showModal ? (
               <div
-                className="absolute top-0 flex justify-center items-center bg-black/50 w-full h-screen right-0"
+                className="absolute top-0 right-0 flex items-center justify-center w-full h-screen bg-black/50"
                 onClick={() => setShowModal(false)}>
-                <div className="flex flex-col items-center bg-white  justify-center  w-fit py-8 px-6 h-fit  gap-x-4 ">
+                <div className="flex flex-col items-center justify-center px-6 py-8 bg-white w-fit h-fit gap-x-4 ">
                   <div className="bg-[#DC4A2D] w-fit flex items-center justify-center border-2 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-[#FCB4A5] rounded-full px-4 py-2 ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +156,7 @@ const Navbar = ({ children }) => {
                         fill="white"
                       />
                     </svg>
-                    <p className="text-white  ml-2">Jobs</p>
+                    <p className="ml-2 text-white">Jobs</p>
                   </div>
                   <div className="px-6 flex flex-col w-fit  cursor-pointer  text-[#B0B0B0]  py-2">
                     <div
@@ -176,7 +176,7 @@ const Navbar = ({ children }) => {
                       </svg>
                       <div className="bg-[#DC4A2D] w-[6px] h-[6px] absolute top-4 rounded-full left-11"></div>
 
-                      <p className="  ml-2">Messages</p>
+                      <p className="ml-2 ">Messages</p>
                     </div>
                     <div className=" flex items-center justify-center  border-b border-[#B0B0B0]  p-4">
                       <svg
@@ -191,9 +191,9 @@ const Navbar = ({ children }) => {
                           stroke-width="2"
                         />
                       </svg>
-                      <p className="  ml-2">Payments</p>
+                      <p className="ml-2 ">Payments</p>
                     </div>
-                    <div className=" flex items-center justify-center   p-4">
+                    <div className="flex items-center justify-center p-4 ">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="22"
@@ -206,14 +206,14 @@ const Navbar = ({ children }) => {
                           stroke-width="2"
                         />
                       </svg>
-                      <p className="  ml-2">Applications</p>
+                      <p className="ml-2 ">Applications</p>
                     </div>
                   </div>
                 </div>
               </div>
             ) : null}
           </div>
-          <div className=" hidden md:flex items-center  ">
+          <div className="items-center hidden md:flex">
             <img src={logo} className="rounded-full" />
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -277,11 +277,7 @@ const Navbar = ({ children }) => {
         </ul>
       </nav>
 
-      <div
-        className="w-3/4
-      ">
-        {children}
-      </div>
+      <div className="w-3/4 ">{children}</div>
     </nav>
   );
 };
