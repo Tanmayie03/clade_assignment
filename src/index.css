@@ -1,0 +1,59 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #e7e7e7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dc4a2d;
+  border-radius: 5px;
+}
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+  @variants responsive {
+    .no-scrollbar {
+      ::-webkit-scrollbar {
+        display: none;
+        width: 0px;
+      }
+    }
+  }
+}
+.underline-active {
+  position: relative;
+}
+
+.underline-active::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  bottom: 0;
+  height: 2px;
+  background-color: #dc4a2d;
+}
+
+.hover-underline-hover {
+  position: relative;
+}
+
+.hover-underline-hover::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  bottom: 0;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.hover-underline-hover:hover::after {
+  background-color: #dc4a2d;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
