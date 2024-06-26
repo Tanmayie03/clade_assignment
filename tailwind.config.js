@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "../clade_assignment/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {

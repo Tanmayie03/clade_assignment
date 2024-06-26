@@ -4,7 +4,6 @@
 ::-webkit-scrollbar-track {
   background: #e7e7e7;
 }
-
 ::-webkit-scrollbar-thumb {
   background: #dc4a2d;
   border-radius: 5px;
@@ -13,12 +12,10 @@
   .paused {
     animation-play-state: paused;
   }
-  @variants responsive {
-    .no-scrollbar {
-      ::-webkit-scrollbar {
-        display: none;
-        width: 0px;
-      }
+  .no-scrollbar {
+    ::-webkit-scrollbar {
+      display: none;
+      width: 0px;
     }
   }
 }
@@ -54,6 +51,7 @@
 .hover-underline-hover:hover::after {
   background-color: #dc4a2d;
 }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
